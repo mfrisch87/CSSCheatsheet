@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 body {
     display: flex;
     background-color: #0a0a0f;
+=======
+main {
+    display: flex;
+}
+
+section {
+    flex-wrap: wrap;
+>>>>>>> 3d8f0564b56964f35a063e6b0b7fcd26ebcfa5d5
 }

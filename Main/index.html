@@ -23,22 +23,41 @@
   </header>
 
   <main>
+    <!-- this is the main section calling classes row and justify-center -->
+    <!-- row sets the flex properties of main and its children -->
+    <!-- justify-center sets the contents of main centered -->
     <section class="row justify-center">
-      <div class="card-column">
-        <figure class="card code-card">
+      
+      <!-- this div is the first card -->
+      <!-- set base column width to be 100% -->
+      <!-- card box outside of dotted line -->
+      <div class="card-column"> 
+
+        <!-- class code card sets a flexbox column to align and justify content within it -->
+        <!-- card box is the dotted line -->
+        <!-- class card is settting the font family Consolas -->
+        <figure class="card code-card"> 
+
+          <!-- use position and negative margins to move title of card over the card's outline and create an overlap effect -->
           <h2 class="card-header">Flexbox Row</h2>
+
+          <!-- text between card header and code block -->
           <div class="card-body">
             <p>Use these three properties to create a Flexbox row layout.</p>
           </div>
           <!-- with the <pre> element, it counts all spaces literally, so proper code indentation cannot be applied in this case -->
+          <!-- code block grows to the height of the largest code block on the page -->
+          <!-- pre element displays everything in between exactly as it is typed with spaces and line breaks -->
+          <!-- code displays the text as code-->
+          <!-- code card pre sets styles to make it so code wraps in <pre> instead of overflowing-->
           <pre class="code-block"><code>.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }</code></pre>
-        </figure>
-      </div>
-      <div class="card-column">
+        </figure> <!--end of figure first card-->
+      </div> <!--end of div first card-->
+      <div class="card-column"> <!--this div is the second card-->
         <figure class="card code-card">
           <h2 class="card-header">Flexbox Column</h2>
           <div class="card-body">

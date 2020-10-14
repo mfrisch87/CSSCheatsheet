@@ -7,6 +7,7 @@
 }
 
 /* set content highlight color and background */
+/* ::selection is what is selected (highlighted) by the user*/
 ::selection {
   background-color: var(--bright-turquoise);
   color: var(--outer-space);
@@ -14,7 +15,7 @@
 
 html {
   /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
-  font-size: 62.5%;
+  font-size: 62.5%; /* 10/16 = 0.625*/
 }
 
 body {
@@ -150,6 +151,8 @@ footer {
 }
 
 /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+/* box shadow short hand values: h-offset v-offset spread color */
+/* fisrt box shadow is set to inset and the second is the default outter */
 .code-card:hover,
 .code-card:hover .card-header {
   box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
